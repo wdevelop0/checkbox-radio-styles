@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form styling</title>
+    <style>
+        body {
+            user-select: none;
+        }
+        
+        .container {
+            padding: 30px;
+        }
+        /* Radio examples */
+        /*         
+        .form-control {
+            display: block;
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        
+        .form-control input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .custom-radio {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+        
+        .form-control:hover input~.custom-radio {
+            background-color: #ccc;
+        }
+        
+        .form-control input:checked~.custom-radio {
+            background-color: #2D846E;
+        }
+        
+        .custom-radio::after {
+            content: "";
+            top: 8px;
+            left: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            display: none;
+        }
+        
+        .form-control input:checked~.custom-radio::after {
+            display: block;
+        } */
+        /* Checkbox examples */
+        
+        .form-control {
+            display: block;
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        
+        .form-control input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .custom-checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #ddd;
+        }
+        
+        .form-control:hover input~.custom-checkbox {
+            background-color: #ccc;
+        }
+        
+        .form-control input:checked~.custom-checkbox {
+            background-color: #2d846e;
+        }
+        
+        .custom-checkbox::after {
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            width: 5px;
+            height: 10px;
+            transform: rotate(45deg);
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            content: "";
+            display: none;
+        }
+        
+        .form-control input:checked~.custom-checkbox::after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <h1>Radio button yasash</h1>
+        <form action="index.php" method="get">
+            <label for="radio" class="form-control">Radio 1
+                <input type="radio" name="radio" id="radio" checked value="radio">
+                <span class="custom-radio"></span>
+            </label>
+            <label for="radio1" class="form-control">Radio 2
+                <input type="radio" name="radio" id="radio1" value="radio">
+                <span class="custom-radio"></span>
+            </label>
+            <label for="radio2" class="form-control">Radio 3
+                <input type="radio" name="radio" id="radio2" value="radio">
+                <span class="custom-radio"></span>
+            </label>
+        </form>
+    </div> -->
+    <div class="container">
+        <h1>Style berilgan checkbox</h1>
+        <label class="form-control">Checkbox 1
+            <input type="checkbox" name="checkbox " checked>
+            <span class="custom-checkbox"></span>
+        </label>
+        <label class="form-control">Checkbox 2
+            <input type="checkbox" name="checkbox">
+            <span class="custom-checkbox"></span>
+        </label>
+        <label class="form-control">Checkbox 3
+            <input type="checkbox" name="checkbox">
+            <span class="custom-checkbox"></span>
+        </label>
+    </div>
+</body>
+
+</html>
